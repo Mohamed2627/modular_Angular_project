@@ -1,8 +1,7 @@
 <app-navbar></app-navbar>
-<!--  
-    fade animatiom 
-    <div [@routerFade]="o.isActivated?o.activatedRoute:''"> -->
+<!--fade animatiom -->
+    <div [@routerFade]="o.isActivated?o.activatedRoute:''"> 
     <!-- translate  animation -->
-<div [@routeAnimations]="o.isActivated?o.activatedRoute:''">
+<!-- <div class="app" [@routeAnimations]="o.isActivated?o.activatedRoute:''"> -->
     <router-outlet #o="outlet"></router-outlet>
 </div>
