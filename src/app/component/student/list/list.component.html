@@ -1,3 +1,7 @@
-<p>
-  list works!
-</p>
+<div class="card" *ngFor="let item of list | 
+                          paginate: {itemsPerPage: pageSize,
+                          currentPage: pageIndex,
+                          totalItems: totalItems }">
+{{item|json}}
+</div>
+<pagination-controls  (pageChange)="pageChanged($event)"></pagination-controls>

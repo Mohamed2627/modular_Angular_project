@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { NgxPaginationModule } from 'ngx-pagination';
 import { ListComponent } from './list/list.component';
 import { RouterModule, Routes } from '@angular/router';
 import { CreateComponent } from './create/create.component';
@@ -23,6 +23,7 @@ let routes:Routes=[
     CreateComponent
   ],
   imports: [
+    NgxPaginationModule,
     SharedModule,
     RouterModule.forChild(routes)
   ],
